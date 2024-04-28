@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Number guessing game</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Number guessing game</h1>
+        <div class="information">
+            <p>We have selected a random number between 1 and 100. 
+                See if you can guess it in 10 turns or fewer. 
+                We'll tell you if your guess was too high or too low.</p>
+        </div>
+        <div class="guess-form">
+            <label>Enter a guess: </label>
+            <input type="number" name="guess" id="guess">
+            <button class="submit-btn">Submit guess</button>
+        </div>
+        
+        <div class="btn-form">
+            <button class="start-btn" type="button">START</button>
+        </div>
+        
+        <div class="hint-form hidden">
+            <p>현재 턴 : <span class="turn">1</span></p>
+            <p>이전에 제출한 숫자 : <span class="before-number">없음</span></p>
+            <div class="text-form">
+                <p class="hint-text"></p>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
